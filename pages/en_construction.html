@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/etudiant-diplome-64.png" type="image/png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="../css/Global.css" />
+    <title>COURS SIO WEB | Page en construction</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Logo</div>
+        <div class="menu" id="menu">
+          <a href="../index.html">Accueil</a>
+          <a href="html.html">HTML</a>
+          <a href="css.html">CSS</a>
+          <a href="en_construction.html">JavaScript</a>
+          <a href="en_construction.html">PHP</a>
+          <a href="en_construction.html">Kotlin</a>
+          <a href="en_construction.html">Python</a>
+          <a href="en_construction.html">SQL</a>
+          <a href="en_construction.html">Angular</a>
+          <a href="en_construction.html">Git</a>
+          <a href="en_construction.html">GitHub</a>
+          <a href="en_construction.html">Linux</a>
+          <a href="linux_command_line.html">Ligne de commande Linux</a>
+        </div>
+        <div class="burger" id="burger" aria-label="Menu" aria-expanded="false" role="button" tabindex="0">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="construction">
+        <i class="fas fa-hard-hat" aria-hidden="true"></i>
+        <h1>Cette page est en construction</h1>
+        <p>Revenez bientôt !</p>
+        <a class="btn" href="../index.html">Retour à l'accueil</a>
+      </section>
+    </main>
+    <footer>
+      <!-- Formulaire de contact (même bloc dans toutes les pages) -->
+      <section class="contact">
+        <h2>Contact</h2>
+        <!-- id="contact-form" : permet à main.js d'afficher une confirmation (GitHub Pages n'exécute pas msg.php). -->
+        <!-- <form> : début du formulaire.
+             action="msg.php" : fichier vers lequel les données sont envoyées à la soumission.
+             method="post" : envoi des données dans le corps de la requête (pas dans l'URL). -->
+        <form action="msg.php" method="post" id="contact-form">
+          <!-- <label for="..."> : étiquette liée au champ dont l'id est identique -->
+          <label for="nom">Nom</label>
+          <!-- type="text" : champ texte ; name="nom" : nom de la donnée envoyée ;
+               required : champ obligatoire, le navigateur bloque l'envoi s'il est vide -->
+          <input type="text" id="nom" name="nom" required />
+          <label for="email">Email</label>
+          <!-- type="email" : le navigateur vérifie le format d'une adresse email -->
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message</label>
+          <!-- <textarea> : zone de texte multiligne ; rows="4" : 4 lignes visibles -->
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <!-- type="submit" : ce bouton envoie le formulaire -->
+          <button type="submit">Envoyer</button>
+        </form>
+        <p class="confirmation" id="confirmation" role="status" hidden>Merci ! Votre message a bien été pris en compte (démonstration).</p>
+      </section>
+      <p>&copy; 2026 COURS SIO WEB LDV Melun. Tous droits réservés.</p>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
